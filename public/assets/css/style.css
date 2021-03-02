@@ -1,0 +1,155 @@
+/* setting */
+:root {
+    --primary: #008F72;
+}
+
+a.text-primary:focus, a.text-primary:hover {
+    text-decoration: none;
+    color: var(--primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.active {
+    color: var(--primary) !important;
+    background-color: transparent !important;
+}
+
+/* topbar */
+.topbar #sidebarToggleTop:hover {
+    background-color: transparent !important;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none !important;
+}
+
+.sidebar .nav-item.dropdown .dropdown-toggle::after, .topbar .nav-item.dropdown .dropdown-toggle::after {
+    content: '\f107' !important;
+}
+
+.topbar {
+    height: 4rem;
+}
+
+/* notification */
+.topbar .dropdown-list .dropdown-header {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e3e6f0;
+    text-transform: capitalize !important;
+    font-size: 0.85rem;
+}
+
+.topbar .dropdown-list .dropdown-item.item-active .text-primary {
+    color: var(--primary) !important;
+}
+
+.topbar .nav-item .nav-link .badge-counter {
+    right: .85rem;
+    border-radius: 50%;
+    padding: .4em;
+}
+
+.logo {
+    height: 3.375rem;
+}
+
+.logo img {
+    height: 100%;
+}
+
+/* sidebar */
+.sidebar {
+    padding: 15px 0;
+    background-color: #2C2C2E;
+}
+
+.sidebar-dark hr.sidebar-divider {
+    border-top: 1px solid #1C1C1E;
+}
+
+.sidebar .nav-item.sidebar-active .nav-link, .sidebar .nav-item.sidebar-active .nav-link i {
+    color: var(--primary);
+}
+
+/* .sidebar .nav-item .nav-link {
+    padding: .75rem 1rem !important;
+} */
+
+.sidebar-active, .item-active {
+    border-left: 3px solid var(--primary) !important;
+}
+
+/* --------------- dashboard --------------- */
+.card .dropdown.show .dropdown-toggle#dropdownFilter::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0;
+    border-right: .3em solid transparent;
+    border-bottom: .3em solid;
+    border-left: .3em solid transparent;
+}
+
+/* .chart-area {
+    height: 10rem;
+} */
+
+/* --------------- Laporan --------------- */
+/* .nav.nav-tabs .nav-item .nav-link.tab-active {
+    border-bottom: 3px solid var(--primary) !important;
+} */
+.nav.nav-tabs .nav-item a.nav-link {
+    color: #6e707e;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+}
+
+.nav.nav-tabs .nav-item .nav-link.active {
+    border-bottom: 3px solid var(--primary) !important;
+    color: var(--primary);
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.card-report, .card-report a{
+    font-size: .75rem;
+}
+
+.card-body {
+    padding: .75rem 1.25rem;
+}
+
+
+
+/* --------------- Kas dan Bank --------------- */
+.badge-shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+/* --------------- Modals --------------- */
+@media screen and (min-width: 1024px){
+    #createRules .modal-dialog {
+        max-width: 850px;
+    }
+}
